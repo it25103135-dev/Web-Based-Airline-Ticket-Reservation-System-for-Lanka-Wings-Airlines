@@ -1,0 +1,1 @@
+<%@ page contentType="text/html;charset=UTF-8" %><!doctype html><html><head><title>404</title><link rel="stylesheet" href="<%=request.getContextPath()%>/assets/css/style.css"></head><body><main class="container page-pad"><div class="empty-state"><h1>404</h1><p>Page not found.</p><a class="btn btn-navy" href="<%=request.getContextPath()%>/">Home</a></div></main></body></html>

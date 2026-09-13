@@ -1,0 +1,32 @@
+LANKA WINGS - FUNCTION 4: BOOKING MANAGEMENT
+
+Requirements:
+- Java 17
+- Apache Tomcat 10+
+- Microsoft SQL Server
+- Maven
+
+Database setup:
+1. Run sql/CREATE_SQL_LOGIN_Lankawings.sql if the SQL login does not already exist.
+2. Run sql/LankaWings_BookingManagement.sql.
+3. DBConnection.java uses:
+   database: LankaWingsBookingManagementDB
+   user: Lankawings
+   password: Lankawings123
+
+Run:
+1. mvn clean package
+2. Deploy target/LankaWings.war to Tomcat 10+
+3. Open /LankaWings/
+
+Scope of this standalone module:
+- Passenger booking history lookup
+- Access reservation details
+- Modify passenger information
+- Change seat / reservation details
+- Cancel bookings
+- Generate and download e-tickets
+- Administrator view/manage all booking records
+
+No Registration/Login, Flight Management, Ticket Reservation creation, Payment processing,
+Notifications, or Feedback management is included.

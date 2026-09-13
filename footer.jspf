@@ -1,0 +1,2 @@
+<footer class="footer"><div class="container">Lanka Wings - Booking Management</div></footer>
+<script src="<%=request.getContextPath()%>/assets/js/app.js"></script>
