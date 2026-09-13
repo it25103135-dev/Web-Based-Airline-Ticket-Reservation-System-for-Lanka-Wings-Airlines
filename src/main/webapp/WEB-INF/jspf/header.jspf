@@ -1,0 +1,9 @@
+<% String cp=request.getContextPath(); %>
+<header class="topbar">
+  <a class="brand" href="<%=cp%>/flights"><span class="brand-mark">LW</span><span>Lanka <b>Wings</b></span></a>
+  <button class="nav-toggle" type="button" aria-label="Toggle menu">☰</button>
+  <nav class="nav-links">
+    <a href="<%=cp%>/flights">Find Flights</a>
+    <a href="<%=cp%>/reservations">Reservation Status</a>
+  </nav>
+</header>
