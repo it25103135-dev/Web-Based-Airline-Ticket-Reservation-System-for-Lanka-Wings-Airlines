@@ -1,0 +1,11 @@
+<%@ page import="com.lankawings.util.HtmlUtil" %>
+<% String cp=request.getContextPath(); %>
+<header class="topbar">
+  <a class="brand" href="<%=cp%>/feedback"><span class="brand-mark">LW</span><span>Lanka <b>Wings</b></span></a>
+  <button class="nav-toggle" type="button" aria-label="Toggle menu">☰</button>
+  <nav class="nav-links">
+    <a href="<%=cp%>/feedback">Feedback</a>
+    <a href="<%=cp%>/my-reviews">My Reviews</a>
+    <a class="nav-cta" href="<%=cp%>/admin/feedback">Admin</a>
+  </nav>
+</header>
