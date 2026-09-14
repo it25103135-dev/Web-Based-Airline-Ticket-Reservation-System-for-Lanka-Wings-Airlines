@@ -1,0 +1,34 @@
+LANKA WINGS - FUNCTION 6: FEEDBACK & REVIEW MANAGEMENT
+
+Requirements:
+- Java 17
+- Apache Tomcat 10+
+- Microsoft SQL Server
+- Maven
+
+Database setup:
+1. Run sql/LankaWings_FeedbackReviewManagement.sql in SQL Server Management Studio.
+2. Run sql/CREATE_SQL_LOGIN_Lankawings.sql if the SQL login does not already exist.
+3. DBConnection.java uses:
+   database = LankaWingsFeedbackDB
+   login    = Lankawings
+   password = Lankawings123
+
+Build and run:
+1. mvn clean package
+2. Deploy target/LankaWings.war to Tomcat 10+
+3. Open /LankaWings/
+
+Included Function 6 only:
+- Passenger feedback/review submission
+- 1-5 star ratings
+- Public review listing
+- Passenger review lookup, update and delete
+- Administrator review listing
+- Administrator response to passenger feedback
+- Publish/hide moderation
+- Administrator delete action
+- Feedback statistics (total, average rating, response count)
+
+No Registration/Login, Flight Management, Ticket Reservation, Booking Management,
+Online Payment, or Notification module is included.
