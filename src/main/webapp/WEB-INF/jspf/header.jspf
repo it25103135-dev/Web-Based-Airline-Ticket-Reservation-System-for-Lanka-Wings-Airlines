@@ -1,0 +1,10 @@
+<% String cp=request.getContextPath(); %>
+<header class="topbar">
+  <a class="brand" href="<%=cp%>/"><span class="brand-mark">LW</span><span>Lanka <b>Wings</b></span></a>
+  <button class="nav-toggle" type="button" aria-label="Toggle menu">☰</button>
+  <nav class="nav-links">
+    <a href="<%=cp%>/payment">Make Payment</a>
+    <a href="<%=cp%>/payment/history">Transaction History</a>
+    <a href="<%=cp%>/admin/payments">Financial Manager</a>
+  </nav>
+</header>

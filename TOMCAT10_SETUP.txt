@@ -1,0 +1,27 @@
+LANKA WINGS - FUNCTION 5: ONLINE PAYMENT
+
+Requirements:
+- Java 17
+- Apache Tomcat 10+
+- Microsoft SQL Server
+- Maven
+
+Database setup:
+1. Run sql/LankaWings_OnlinePayment.sql in SQL Server Management Studio.
+2. Run sql/CREATE_SQL_LOGIN_Lankawings.sql if the Lankawings SQL login does not already exist.
+3. DBConnection.java uses:
+   database = LankaWingsDB
+   login    = Lankawings
+   password = Lankawings123
+
+Build and run:
+1. mvn clean package
+2. Deploy target/LankaWings.war to Tomcat 10+.
+3. Open the deployed application.
+
+Test booking references:
+- LW-PAY-1001
+- LW-PAY-1002
+- LW-PAY-1003
+
+This is a classroom payment-gateway simulation. Full card numbers and CVV values are never stored; only the final four card digits are saved with each transaction.
